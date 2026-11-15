@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendo Mtaani | Location Dating Kenya</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">❤️ Pendo Mtaani</div>
+      <div class="nav-links">
+        <a href="#discover">Discover</a>
+        <a href="#how">How it works</a>
+        <a href="#safety">Safety</a>
+        <button id="loginBtn" class="btn-outline">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find your person <span>nearby</span> in Kenya</h1>
+      <p>Location-based matchmaking. Connect with people in your county — Nairobi, Mombasa, Kisumu, Kiambu and more.</p>
+      <div class="cta">
+        <button id="startBtn" class="btn-primary">Start matching</button>
+        <button id="locateBtn" class="btn-secondary">Use my location</button>
+      </div>
+      <p id="locationStatus" class="status"></p>
+    </div>
+    <div class="hero-visual">
+      <div class="card-stack" id="previewCards"></div>
+    </div>
+  </section>
+
+  <section id="discover" class="discover">
+    <h2>Nearby matches</h2>
+    <div class="filters">
+      <select id="countyFilter">
+        <option value="">All counties</option>
+        <option>Nairobi</option>
+        <option>Mombasa</option>
+        <option>Kisumu</option>
+        <option>Kiambu</option>
+        <option>Nakuru</option>
+        <option>Eldoret</option>
+      </select>
+      <select id="ageFilter">
+        <option value="">Any age</option>
+        <option value="18-25">18-25</option>
+        <option value="26-35">26-35</option>
+        <option value="36+">36+</option>
+      </select>
+    </div>
+    <div id="matches" class="matches-grid"></div>
+  </section>
+
+  <section id="how" class="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><h3>Create profile</h3><p>Photos, bio, interests, county.</p></div>
+      <div class="step"><span>2</span><h3>Share location</h3><p>GPS or pick your town.</p></div>
+      <div class="step"><span>3</span><h3>Swipe & match</h3><p>Like people nearby. Chat when you match.</p></div>
+    </div>
+  </section>
+
+  <section id="safety" class="safety">
+    <h2>Safety first</h2>
+    <ul>
+      <li>Report & block tools</li>
+      <li>Verified profiles (coming)</li>
+      <li>Never share exact coordinates</li>
+      <li>Meet in public places</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Pendo Mtaani — Made for Kenya 🇰🇪</p>
+    <p>Demo only. Full auth, chat, and payments (M-Pesa) require backend.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
